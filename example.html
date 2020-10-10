@@ -1,0 +1,82 @@
+
+<style>
+ .container {
+	display: grid;
+	place-items: start;
+	min-height: 400px;
+ }
+ .floating-stack {
+	background: #F00;
+	color: #0F0;
+	height: 80vh;
+	height: 320px;
+	border-radius: 16px;
+	overflow-y: auto;
+ 
+ .floating-stack > dl {
+	margin: 0 0 1rem;
+	display: grid;
+	grid-template-columns: 2.5rem 1fr;
+	align-items: center;
+}
+
+ .floating-stack dt {
+	position: sticky;
+	top: 0.5rem;
+	left: 0.5rem;
+	font-weight: bold;
+	background: #263238;
+	color: #cfd8dc;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	padding: 0.25rem 1rem;
+	grid-column: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+ }
+
+ .floating-stack dd {
+	grid-column: 2;
+	margin: 0;
+	padding: 0.75rem;
+}
+
+ .floating-stack > dl:first-of-type > dd:first-of-type {
+	margin-top: 0.25rem;
+}
+</style>
+<main>
+<p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+
+  <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+  
+  <ol type="1" reversed>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+  </ol>
+  <form>
+	Email:<input type="email"/>
+	Email:<input type="text" required/>
+	<button type="submit">this button submits the form</button>
+	<input type="submit" value="click"/>
+  </form>
+  <div class="container">
+	<div class="floating-stack">
+		<dl>
+			<dt>TEA</dt>
+				<dd>hot</dd>
+				<dd>cold</dd>
+			<dt>COFFEE</dt>
+				<dd>hot</dd>
+				<dd>cold</dd>
+	</div>
+  </dl>
+  </div>
+</main>
